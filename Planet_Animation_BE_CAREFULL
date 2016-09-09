@@ -1,0 +1,9 @@
+set terminal gif animate delay 10 size 2560,1920
+set output 'planets.gif'
+stats 'datafile' nooutput
+set xrange [0:520000000]
+set yrange [0:520000000]
+set zrange [0:520000000]
+do for [i = 1: int(STATS_blocks)] {
+    splot 'datafile' index (i - 1) with lines
+}

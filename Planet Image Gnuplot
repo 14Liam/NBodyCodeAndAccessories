@@ -1,0 +1,9 @@
+set terminal jpeg size 2560,1920
+set output 'planets.jpeg'
+stats 'datafile' nooutput
+set xrange [520000000:520000000]
+set yrange [520000000:520000000]
+set zrange [520000000:520000000]
+do for [i = 1: int(STATS_blocks)] {
+    splot 'datafile' index (i - 1) with lines
+}

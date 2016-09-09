@@ -1,0 +1,1 @@
+splot 'Jupiter' linetype 2 linecolor 6652640,'Io' with lines linetype 1 linecolor 7931561,'Europa' with lines linetype 1 linecolor 13371029,'Ganymede' with lines linetype 1 linecolor 16243769,'Callisto' with lines linetype 1 linecolor 1703536
